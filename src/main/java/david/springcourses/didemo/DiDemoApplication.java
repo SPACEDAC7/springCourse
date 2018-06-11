@@ -1,12 +1,12 @@
-package udemy.spreingboot.webdemo;
+package david.springcourses.didemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WebdemoApplication {
+public class DiDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WebdemoApplication.class, args);
+		SpringApplication.run(DiDemoApplication.class, args);
 	}
 }
