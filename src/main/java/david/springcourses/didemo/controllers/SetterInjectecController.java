@@ -2,6 +2,7 @@ package david.springcourses.didemo.controllers;
 
 import david.springcourses.didemo.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -15,7 +16,8 @@ public class SetterInjectecController {
     }
 
     @Autowired
-    public void setGreetingService(GreetingService greetingService) {
+    @Qualifier("setterGreetingService")
+    public void setGreetingService( GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 }
