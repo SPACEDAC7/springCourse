@@ -13,6 +13,8 @@ import org.springframework.stereotype.Service;
 @Profile("de")
 public class PrimaryGermanGreetingService implements GreetingService {
 
+
+    @Autowired
     private GreetingRepository greetingRepository;
 
     @Override
